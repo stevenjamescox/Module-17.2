@@ -7,3 +7,25 @@
 //
 
 import Foundation
+
+class GameController {
+
+    enum Winner {
+    case Player
+    case Computer
+    case Tie
+    }
+
+    static func playGame(completion: (winner: Winner, playerCard: Card, computerCard: Card) -> Void) {
+        CardController.drawCards(2) { (cards) in
+            guard cards.count == 2 else { print("Houston, we have a problem"); return }
+            let playerCard = cards[0]
+            let computerCard = cards[1]
+        }
+    
+    
+    
+    }
+    
+
+}
