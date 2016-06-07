@@ -18,4 +18,8 @@ var str = "Hello, playground"
  QOS_CLASS_BACKGROUND
  
  
+ concurrent queues, based on how many cores your system has, the number of threads that can be working on your stuff at the same time
+ AKA NSURLSession, also the four QOS ones above. there are/can be others.
+ 
+ 
  */
