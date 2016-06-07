@@ -28,8 +28,16 @@ class WarViewController: UIViewController {
     
     
     @IBAction func playGameButtonTapped(sender: AnyObject) {
+        //Step 1 = call the playgame function so that we can get a winnner & a loser
+        GameController.playGame { (winner, playerCard, computerCard) in
+        //Step 2 = Update the imageViews with the images
+            ImageController.imageForURL(playerCard.imageURLString, completion: { (image) in
+                self.playerCardImageView.image = image
+            })
+            ImageController.imageForURL(computerCard.imageURLString, completion: { (image) in
+                self.computerCardImageView.image = image
+            })
+        }
     }
-
-
 }
 

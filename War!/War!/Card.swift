@@ -26,7 +26,7 @@ class Card {
             return 13
         case "QUEEN":
             return 12
-        case "JAKE":
+        case "JACK":
             return 11
         default:
              return Int(value)!
