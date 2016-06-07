@@ -10,6 +10,12 @@ import UIKit
 
 class WarViewController: UIViewController {
 
+    @IBOutlet weak var playerCardImageView: UIImageView!
+    
+    
+    @IBOutlet weak var computerCardImageView: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -18,6 +24,10 @@ class WarViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @IBAction func playGameButtonTapped(sender: AnyObject) {
     }
 
 

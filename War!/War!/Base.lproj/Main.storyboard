@@ -34,10 +34,17 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXP-Wr-NtS">
                                         <rect key="frame" x="0.0" y="527" width="584" height="45"/>
+                                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="F6w-sR-ftl"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="PLAY!">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playGameButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C6f-gd-Wtx"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -50,6 +57,10 @@
                             <constraint firstItem="Blt-78-9Rd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-12" id="wNp-11-vCk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="computerCardImageView" destination="rbe-02-5Ub" id="JAY-Gd-oYz"/>
+                        <outlet property="playerCardImageView" destination="PQI-Xm-Vq5" id="t7s-5E-ELy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
