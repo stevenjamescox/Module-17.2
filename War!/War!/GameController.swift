@@ -23,7 +23,7 @@ class GameController {
         let computerCard = cards[1]
         
              if playerCard.intValue > computerCard.intValue { completion(winner: .Player, playerCard: playerCard, computerCard: computerCard) }
-             else if playerCard.intValue < computerCard.intValue { completion(winner: .Player, playerCard: playerCard, computerCard: computerCard) }
+             else if playerCard.intValue < computerCard.intValue { completion(winner: .Computer, playerCard: playerCard, computerCard: computerCard) }
              else { completion (winner: .Tie, playerCard: playerCard, computerCard: computerCard)
 
             }
